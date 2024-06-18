@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth; /* Aplica rolagem suave para todo o documento */
+}
 /* Global Styles */
 * {
   margin: 0;
@@ -9,7 +12,7 @@
 
 :root {
   font-size: 62.5%;
-  --base-font: 'Mulish', sans-serif;
+  --base-font: "Mulish", sans-serif;
 
   /* Colors */
   --white: #ffffff;
@@ -126,6 +129,16 @@ textarea {
 
 #cards .card .card-text {
   width: 26.5rem;
+}
+
+.card {
+  padding: 3.2rem;
+  border-radius: 2.4rem;
+  transition: transform 0.6s ease;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Aumenta em 5% */
 }
 
 /* Contact Section */
@@ -261,26 +274,26 @@ footer p {
   #cards .card img {
     width: 9.7rem;
     margin-bottom: 4rem;
-  }
 
-  /* Contact Section */
-  #contact {
-    display: flex;
-    align-items: center;
-    gap: 9.2rem;
-    padding: 0;
-    height: 62.2rem;
-    margin: 0 auto;
-    background: url(./images/stars.svg);
-    background-repeat: no-repeat;
-    background-position: right;
-  }
+    /* Contact Section */
+    #contact {
+      display: flex;
+      align-items: center;
+      gap: 9.2rem;
+      padding: 0;
+      height: 62.2rem;
+      margin: 0 auto;
+      background: url(./images/stars.svg);
+      background-repeat: no-repeat;
+      background-position: right;
+    }
 
-  #contact form {
-    flex: 1;
-    margin-left: 10.9rem;
-  }
-  #contact .stars {
-    flex: 1;
+    #contact form {
+      flex: 1;
+      margin-left: 10.9rem;
+    }
+    #contact .stars {
+      flex: 1;
+    }
   }
 }
